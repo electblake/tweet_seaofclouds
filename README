@@ -1,0 +1,16 @@
+Defines a simple box called "Sea of Clouds - Tweet" and includes some css.
+
+*INSTALL*
+
+1. Download the jquery.tweet.js via: https://github.com/seaofclouds/tweet
+
+2. Take the /tweet folder that is inside your uncompressed download or clone and put into root of module folder (tweet_seaofclouds)
+
+3. Enable & Put blog where you wants
+
+4. customize the drupal.tweet.js & the css in /tweet
+
+5. wait until I do better admin for this
+
+*MORE INFO*
+http://tweet.seaofclouds.com/
