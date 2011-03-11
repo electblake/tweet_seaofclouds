@@ -1,0 +1,33 @@
+<?php
+/* Implements hook_theme() */
+function tweet_seaofclouds_theme() {
+	$items['tweet_seaofclouds'] = array(
+		'template' => 'templates/tweet_seaofclouds'
+	);
+	return $items;
+}
+/* Implements hook_block() */
+function tweet_seaofclouds_block($op = 'list', $delta = 0, $edit = array()) {
+  switch($op) {
+    
+    case 'list':
+      $blocks['tweet_seaofclouds'] = array(
+        'info' => t('Sea Of Cloud - Basic Tweet'), 
+        );
+      return $blocks;
+      break;
+      
+    case 'view':
+      if ($delta == 'tweet_seaofclouds') {
+        //$tweet = twitter_pull_retrieve('@primevista', 1);
+        drupal_add_js(drupal_get_path('module', 'tweet_seaofclouds').'/tweet/jquery.tweet.js');
+        drupal_add_css(drupal_get_path('module', 'tweet_seaofclouds').'/tweet/jquery.tweet.css');
+        drupal_add_js(drupal_get_path('module', 'tweet_seaofclouds').'/drupal.tweet.js');
+        $block['content'] = theme('tweet_seaofclouds');
+      }
+      return $block;
+      break;
+  
+  }
+}
+?>

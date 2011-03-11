@@ -1,0 +1,4 @@
+; $Id $
+name = Sea of Clouds Tweet
+description = '*Very* simple implementation of the <a href="https://github.com/seaofclouds/tweet">Sea of Clouds Tweet Library</a>'
+core = 6.x
